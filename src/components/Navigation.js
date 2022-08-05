@@ -6,7 +6,7 @@ function Navigation() {
             Accueail
             </NavLink>
 
-            <NavLink to='/yu'>A Propos</NavLink>
+            <NavLink to='/a-propos'>A Propos</NavLink>
           </nav>
         );
       }
