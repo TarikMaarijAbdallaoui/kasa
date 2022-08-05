@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Logo = () => {
+const Logo = ({props}) => {
+  
   return (
     <div>
-        <img src="./img/LOGO.png" alt="Logo" />
+        <img src={props} alt="Logo" />
     </div>
   )
 }

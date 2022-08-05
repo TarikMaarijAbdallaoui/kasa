@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 
 const Home = () => {
         const imagen = {
@@ -12,6 +13,7 @@ const Home = () => {
         <div className='app'>
                 <Header />
                 <Banner props={imagen}/>
+                <Footer />
         </div>
     
   )
