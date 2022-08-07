@@ -1,3 +1,6 @@
+*{
+        box-sizing: border-box;
+}
 body{
         background-color: white;
         color: #FF6060;
@@ -7,12 +10,14 @@ body{
         display:flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         min-height: 100vh;
 }
 .app {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         max-width: 1240px;
         padding: 20px;
         flex-grow: 1;
@@ -65,7 +70,11 @@ body{
         height: 223px;
         filter: brightness(0.65);
 }
-
+.giant {
+        color: #FF6060;
+        font-size: 100px;
+        font-weight: 700;
+}
 .banner p {
         color: white;
         font-size: 48px;
@@ -88,17 +97,27 @@ main .card {
         height: 340px;
         border-radius: 10px;
         overflow: hidden;
-}
-main .image {
         position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+}
+.card .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 340px;
         z-index: 0;
 }
-main .image img {
+.card .image img {
         width: 100%;
         object-fit: cover;
-        height: 340px;
+        height: 100%;
 }
-main .text {
-        position: relative;
-        z-index: 1;
+.card .text {
+        position: absolute;
+        z-index: 10;
+        background-color: rgba(15, 15, 15, 0.165);
 }

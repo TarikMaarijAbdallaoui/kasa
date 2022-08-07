@@ -1,5 +1,6 @@
 import React from 'react'
 import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 
 const A_Propos = () => {
@@ -9,8 +10,12 @@ const A_Propos = () => {
   }
   return (
     <>
+    <div className="app">
+
       <Header />
       <Banner props={imagen} />
+    </div>
+    <Footer />
     </>
   )
 }
