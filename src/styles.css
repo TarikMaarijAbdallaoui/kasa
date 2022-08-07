@@ -1,8 +1,31 @@
 body{
         background-color: white;
         color: #FF6060;
+        max-width: 1440px;
 }
+#root{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+}
+.app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1240px;
+        padding: 20px;
+        flex-grow: 1;
 
+}
+.header {
+        width: 100%;
+        max-width: 1240px;
+
+        display: flex;
+        justify-content: space-between;
+        
+}
 
 .nav a {
         text-decoration: none;
@@ -11,28 +34,35 @@ body{
 }
 
 .banner {
-        padding: 0 100px;
+        max-width: 1240px;
         position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 63px;
+        height: 223px;
+        width: 100%;
 }
 .banner .super {
         background-color: rgba(0, 0, 0, .3);
         width: 100%;
+        max-width: 1240px;
         height: 223px;
         border-radius: 15px;
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         object-fit: cover;
 }
 .banner .super img {
         width: 100%;
+        max-width: 1240px;
         border-radius: 15px;
         z-index: 0;
         position: absolute;
         top: 0;
         left: 0;
-        height: 100%;
+        height: 223px;
         filter: brightness(0.65);
 }
 
@@ -40,4 +70,35 @@ body{
         color: white;
         font-size: 48px;
         position:absolute;
+}
+
+main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #F6F6F6;
+        padding: 56px 50px;
+        gap: 40px;
+        border-radius: 25px;
+        margin-top: 43px;
+
+}
+main .card {
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        overflow: hidden;
+}
+main .image {
+        position: relative;
+        z-index: 0;
+}
+main .image img {
+        width: 100%;
+        object-fit: cover;
+        height: 340px;
+}
+main .text {
+        position: relative;
+        z-index: 1;
 }
