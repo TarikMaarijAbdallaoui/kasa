@@ -1,15 +1,16 @@
 
 
-function Banner({props}) {
-        const {url, text} = props
+function Banner({image, printText}) {
+        
+        const Texte = () => <p>{image.text}</p>
 
         return (
                 <div className='banner'>
                         <div className='super'>
-                        <img src={url} alt={text} />
+                        <img src={image.url} alt={image.text} />
                         </div>
+                        {printText && <Texte />}
                         
-                        <p>Chez vous, partout et ailleurs</p>
                 </div>
         );
       }
