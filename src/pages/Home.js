@@ -3,18 +3,19 @@ import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import Cards from '../components/Cards'
+import home_banner from '../img/IMG.png'
 
 const Home = () => {
         const imagen = {
-                url: '/img/IMG.png',
-                text: "Beautiful landscape"
+                url: home_banner,
+                text: "Chez vous, partout et ailleurs"
         }
 
   return (
         <>
                 <div className='app'>
                         <Header />
-                        <Banner props={imagen}/>
+                        <Banner image={imagen} printText={true}/>
                         <Cards />
                 </div>
                 <Footer />
