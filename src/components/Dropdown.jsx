@@ -1,14 +1,25 @@
 import React, { useState } from 'react'
 
-const Dropdown = () => {
+const Dropdown = (props) => {
+const {title, content} = props
   const [open, setOpen] = useState(false)
 
+  const Texte = () => {
+        return (
+                <div className="container-block">
+                        <div className="content-block">
+                                <p>{content}</p>
+                        </div>
+                </div>
+        )
+  }
 
   return (
     <div className='dropdown'>
         <div className="launcher" onClick={() => setOpen(!open)}>
-                <p>Titulo</p>
-        </div>
+                <p>{title}</p>
+        </div>  
+        {open && <Texte />}
 
     </div>
   )
