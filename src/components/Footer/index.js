@@ -1,9 +1,10 @@
 import React from 'react'
 import Logo from '../Logo'
+import logoFooter from "../../img/logo-footer.png"
 import './Footer.css'
 
 const Footer = () => {
-  const logoFooter = "./img/logo-footer.png"
+  
   return (
     <footer>
       <Logo props={logoFooter} />
