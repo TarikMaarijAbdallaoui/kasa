@@ -1,0 +1,31 @@
+.dropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        width: 100%;
+        max-width: 1000px;
+}
+.launcher {
+        background-color: #FF6060;
+        font-size: 18px;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 10px;
+        
+}
+.launcher p {
+        margin: 0;
+}
+.dropdown .container-block {
+        background-color: #F6F6F6;
+        padding: 10px;
+        margin: 0 10px;
+        border-radius: 10px;
+}
+.dropdown .container-block p {
+color: #FF6060;
+padding: 10px;
+font-size: 16px;
+
+}

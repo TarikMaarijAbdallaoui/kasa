@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import a_propos_banner from '../img/a-propos-img.png'
 
+
 const A_Propos = () => {
   const imagen = {
     url:a_propos_banner,

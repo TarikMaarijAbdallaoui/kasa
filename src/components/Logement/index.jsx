@@ -6,8 +6,7 @@ import Gallery from './Gallery'
 const Logement = () => {
         let params = useParams()
         let logement = data.filter(logement => logement.id === params.id)
-        console.log(logement.pictures);
-
+        logement = logement[0]
 
 
   return (
