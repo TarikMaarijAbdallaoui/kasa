@@ -1,6 +1,7 @@
 import React from 'react'
+import '../../styles/gallery.css'
 
-const Gallery = (pictures) => {
+const Gallery = ({pictures}) => {
         console.log(pictures);
         const [current, setCurrent] = React.useState(0);
         const length = pictures.length;
