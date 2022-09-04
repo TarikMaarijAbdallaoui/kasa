@@ -5,9 +5,18 @@ import Gallery from './Gallery'
 
 const Logement = () => {
         let params = useParams()
-        let logement = data.filter(logement => logement.id === params.id)
-        logement = logement[0]
+        let logement = data.find(logement => logement.id === params.id)
 
+        const details = [
+          {
+            title: 'Description',
+            text: logement.description
+          },
+          {
+            title: 'Equipments',
+            text: logement.equipments
+          }
+      ]
 
   return (
     <div className='logement'>

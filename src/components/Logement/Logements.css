@@ -2,19 +2,19 @@
 .logement{
 padding-bottom: 1rem}
 header.info
-   { display: flex
-    justify-content: space-between
-    padding: 1rem 0
-    text-align: center
+   { display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    text-align: center;
     margin-top: 1rem}
     h2
-       { font-size: 1.5rem
-        margin: 0}
+       { font-size: 1.5rem;
+        margin: 0;}
     p
-       { font-size: 1rem
-        margin: 0 0 1rem 0}
+       { font-size: 1rem;
+        margin: 0 0 1rem 0;}
     .info-logement
-        {display: flex
-        flex-direction: column
+        {display: flex;
+        flex-direction: column;
         align-items: flex-start}
         
