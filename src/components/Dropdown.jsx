@@ -1,16 +1,38 @@
 import React, { useState } from 'react'
 import '../styles/dropdown.css'
 
-const Dropdown = (props) => {
-const {title, content} = props
+const Dropdown = ({props}) => {
+        const item = props
+  let block;
   const [open, setOpen] = useState(false)
+
+  const Li = ({props}) => <li>{props}</li>
+
+  const openIcon = <i className='fa fa-angle-down fa-2x'></i>
+  const closeIcon = <i className='fa fa-angle-up fa-2x'></i>
 
   const Texte = () => {
         return (
                 <div className="container-block">
                         <div className="content-block">
-                                <p>{content}</p>
+                                <p>{item.text}</p>
                         </div>
+                </div>
+        )
+  }
+
+  if (typeof  item.text === "string") {
+        block = Texte()
+  } else if (Array.isArray(item.text)) {                
+        block=(
+                <div className='container-block'>
+                       <div className="content-block">
+                                <ul>
+                                        {item.text.map((element, index)=>{
+                                                return <Li key={index} props={element} />
+                                        })}
+                                </ul>
+                        </div>  
                 </div>
         )
   }
@@ -18,9 +40,9 @@ const {title, content} = props
   return (
     <div className='dropdown'>
         <div className="launcher" onClick={() => setOpen(!open)}>
-                <p>{title}</p>
+                {item.title} {open ? closeIcon : openIcon}
         </div>  
-        {open && <Texte />}
+        {open && block}
 
     </div>
   )
