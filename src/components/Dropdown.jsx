@@ -4,7 +4,7 @@ import '../styles/dropdown.css'
 const Dropdown = ({props}) => {
         const item = props
   let block;
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
 
   const Li = ({props}) => <li>{props}</li>
 
