@@ -12,7 +12,10 @@
         margin: 10px;
         padding: 15px;
         border-radius: 10px;
-        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
 }
 .launcher p {
         margin: 0;
@@ -28,4 +31,9 @@ color: #FF6060;
 padding: 10px;
 font-size: 16px;
 
+}
+.dropdown .container-block li {
+        color: #FF6060;
+        font-size: 16px;
+        list-style: none;
 }
