@@ -52,3 +52,9 @@
         color: white;
 
 }
+
+@media (max-width: 800px) {
+        .gallery {
+                height: 355px;
+        }
+}

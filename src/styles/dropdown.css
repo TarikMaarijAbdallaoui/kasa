@@ -10,8 +10,8 @@
         background-color: #FF6060;
         font-size: 18px;
         margin: 10px;
-        padding: 15px;
-        border-radius: 10px;
+        padding: 0 15px;
+        border-radius: 7px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -28,7 +28,6 @@
 }
 .dropdown .container-block p {
 color: #FF6060;
-padding: 10px;
 font-size: 16px;
 
 }
