@@ -1,0 +1,44 @@
+
+.banner {
+        max-width: 1240px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 63px;
+        height: 223px;
+        width: 100%;
+}
+.banner .super {
+        background-color: rgba(0, 0, 0, .3);
+        width: 100%;
+        max-width: 1240px;
+        height: 223px;
+        border-radius: 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+}
+.banner .super img {
+        width: 100%;
+        max-width: 1240px;
+        border-radius: 15px;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 223px;
+        filter: brightness(0.65);
+}
+.giant {
+        color: #FFFFFF;
+        font-size: 100px;
+        font-weight: 700;
+        margin-bottom: 0 !important;
+}
+.banner p {
+        color: white;
+        font-size: 48px;
+        position:absolute;
+}

@@ -45,34 +45,7 @@
     gap: 20px;
 
 }
-.info-host .profile{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: flex-end;
-}
 
-.info-host .profile img {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-}
-
-.info-host .profile .name {
-  text-align: right;
-}
-
-.rating i {
-  margin-left: 5px;
-  color: #E3E3E3;
-}
-i.star {
-  color: #ff6060;
-}
-.logement .details {
-  display: flex;
-  align-items: flex-start;
-}
 
 @media (max-width: 800px) {
   .logement header.info {

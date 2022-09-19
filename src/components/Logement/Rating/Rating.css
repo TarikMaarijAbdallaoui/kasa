@@ -1,0 +1,11 @@
+.rating i {
+  margin-left: 5px;
+  color: #e3e3e3;
+}
+i.star {
+  color: #ff6060;
+}
+.logement .details {
+  display: flex;
+  align-items: flex-start;
+}
