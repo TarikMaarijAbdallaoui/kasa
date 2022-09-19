@@ -1,4 +1,5 @@
 import React from 'react'
+import './Host.css'
 
 const Host = ({props}) => {
   return (

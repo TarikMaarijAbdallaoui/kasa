@@ -1,4 +1,5 @@
 import React from 'react'
+import './Rating.css'
 
 const Star = () =>  <i className='fa fa-solid fa-star fa-2x star'></i>
 const NoStar = () =>  <i className='fa fa-solid fa-star fa-2x'></i>

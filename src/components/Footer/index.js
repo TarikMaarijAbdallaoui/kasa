@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../Logo'
+import Logo from '../Header/Logo'
 import logoFooter from "../../img/logo-footer.png"
 import './Footer.css'
 

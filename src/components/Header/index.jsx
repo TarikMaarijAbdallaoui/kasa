@@ -1,6 +1,7 @@
-import Logo from './Logo.js';
-import logoHeader from "../img/LOGO.png"
-import Navigation from './Navigation.js'
+import Logo from './Logo';
+import logoHeader from "../../img/LOGO.png"
+import Navigation from './Navigation'
+import './Header.css'
 
 function Header() {
         return (

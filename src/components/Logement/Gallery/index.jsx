@@ -1,5 +1,14 @@
 import React from 'react'
-import '../../styles/gallery.css'
+import './Gallery.css'
+
+const ArrowButtons = ({current, setCurrent}) => {
+  return (
+    <div className="gallery-buttons">
+          <i className="fa fa-solid fa-angle-left fa-3x" onClick={() => setCurrent(current - 1)}></i>
+          <i className="fa fa-solid fa-angle-right fa-3x" onClick={() => setCurrent(current + 1)}></i>
+        </div>
+  )
+}
 
 const Gallery = ({pictures}) => {
         console.log(pictures);
@@ -10,10 +19,9 @@ const Gallery = ({pictures}) => {
   return (
         <div className="gallery">
         <img src={pictures[current]} alt="" />
-        <div className="gallery-buttons">
-          <i className="fa fa-solid fa-angle-left fa-3x" onClick={() => setCurrent(current - 1)}></i>
-          <i className="fa fa-solid fa-angle-right fa-3x" onClick={() => setCurrent(current + 1)}></i>
-        </div>
+
+        {length > 1 && <ArrowButtons setCurrent={setCurrent} current={current}/>}
+        
         <span className="current">
           {current + 1}/{length}
         </span>

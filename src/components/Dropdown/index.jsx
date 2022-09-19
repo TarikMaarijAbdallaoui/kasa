@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import '../styles/dropdown.css'
+import './Dropdown.css'
 
 const Dropdown = ({props}) => {
         const item = props
   let block;
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   const Li = ({props}) => <li>{props}</li>
 

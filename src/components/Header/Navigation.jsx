@@ -3,7 +3,7 @@ function Navigation() {
         return (
           <nav className="nav">
             <NavLink to="/">
-            Accueail
+            Accueil
             </NavLink>
           
             <NavLink to='/a-propos'>A Propos</NavLink>

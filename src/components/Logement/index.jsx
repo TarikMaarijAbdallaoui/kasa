@@ -1,7 +1,7 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import data from '../../data/logements.json'
-import Pill from '../Pill'
+import Pill from './Pill'
 import Gallery from './Gallery'
 import Dropdown from '../Dropdown'
 import './Logements.css'
@@ -9,19 +9,26 @@ import Host from './Host'
 import Stars from './Rating'
 
 const Logement = () => {
+        let details = {}
         let params = useParams()
         let logement = data.find(logement => logement.id === params.id)
+        console.log("logement", logement)
+        if (logement === undefined){
+         <Navigate to={"/not-found"}/>
+        } else {
+          details = [
+            {
+              title: 'Description',
+              text: logement.description
+            },
+            {
+              title: 'Equipments',
+              text: logement.equipments
+            }
+        ]
+        }
 
-        const details = [
-          {
-            title: 'Description',
-            text: logement.description
-          },
-          {
-            title: 'Equipments',
-            text: logement.equipments
-          }
-      ]
+        
 
   return (
     <div className='logement'>
