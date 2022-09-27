@@ -1,6 +1,6 @@
-import Logo from './Logo';
+import Logo from '../Logo/Logo';
 import logoHeader from "../../img/LOGO.png"
-import Navigation from './Navigation'
+import Navigation from '../Navigation'
 import './Header.css'
 
 function Header() {

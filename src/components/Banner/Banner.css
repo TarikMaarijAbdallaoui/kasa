@@ -32,13 +32,18 @@
         filter: brightness(0.65);
 }
 .giant {
-        color: #FFFFFF;
+        color: #FF6060;
         font-size: 100px;
         font-weight: 700;
         margin-bottom: 0 !important;
 }
 .banner p {
-        color: white;
         font-size: 48px;
         position:absolute;
+}
+
+.banner-text {
+        text-align: center;
+        color: #FF6060;
+        
 }

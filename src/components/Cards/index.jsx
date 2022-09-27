@@ -1,6 +1,6 @@
 import React from 'react'
 import logements from '../../data/logements.json'
-import Card from './Card'
+import Card from '../Card'
 import './Cards.css'
 
 const Cards = () => {

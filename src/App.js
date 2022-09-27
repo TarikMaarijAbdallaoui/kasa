@@ -16,7 +16,6 @@ function App() {
         <Route path='/a-propos' element={<APropos />} />
         <Route path="/FicheLogement/:id" element={<FicheLogement />}/>
         <Route path="/FicheLogement/" element={<Page404 />}>
-          {/*<Route path=":id"element={<FicheLogement />} />*/}
           <Route path="*" element={<Page404 />} />
         </Route>
         <Route path="/not-found" element={<Page404 />} />
