@@ -12,10 +12,10 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/a-propos' element={<APropos />} />
-        <Route path="/FicheLogement/:id" element={<FicheLogement />}/>
-        <Route path="/FicheLogement/" element={<Page404 />}>
+        <Route path='/kasa/' element={<Home />} />
+        <Route path='/kasa/a-propos' element={<APropos />} />
+        <Route path="/kasa/FicheLogement/:id" element={<FicheLogement />}/>
+        <Route path="/kasa/FicheLogement/" element={<Page404 />}>
           <Route path="*" element={<Page404 />} />
         </Route>
         <Route path="/not-found" element={<Page404 />} />
