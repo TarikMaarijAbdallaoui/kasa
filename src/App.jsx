@@ -18,7 +18,7 @@ function App() {
         <Route path="/kasa/FicheLogement/" element={<Page404 />}>
           <Route path="*" element={<Page404 />} />
         </Route>
-        <Route path="/not-found" element={<Page404 />} />
+        <Route path="/kasa/not-found" element={<Page404 />} />
         <Route path='/*' element={<Page404 />} />
     </Routes>
     </BrowserRouter>
