@@ -4,11 +4,11 @@ import './Navigation.css'
 function Navigation() {
         return (
           <nav className="nav">
-            <NavLink to="/">
+            <NavLink to="/kasa">
             Accueil
             </NavLink>
           
-            <NavLink to='/a-propos'>A Propos</NavLink>
+            <NavLink to='/kasa/a-propos'>A Propos</NavLink>
           </nav>
         );
       }

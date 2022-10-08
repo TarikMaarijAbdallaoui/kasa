@@ -12,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
+        <Route path='/' element={<Home />} />
         <Route path='/kasa/' element={<Home />} />
         <Route path='/kasa/a-propos' element={<APropos />} />
         <Route path="/kasa/FicheLogement/:id" element={<FicheLogement />}/>

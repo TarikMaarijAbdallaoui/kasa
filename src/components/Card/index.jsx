@@ -5,7 +5,7 @@ import './Card.css'
 const Card = ({props}) => {
   return (
     <div className='card'>
-      <Link to={`FicheLogement/${props.id}`}>
+      <Link to={`/kasa/FicheLogement/${props.id}`}>
         <div className="image">
                 <img src={props.cover} alt={props.title} />
         </div>
